@@ -1,0 +1,455 @@
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #1b6555;
+    margin-top: 60px;
+    background-image: url(../Images/profile-pic.jpg), url(../Images/website-background-texture-2.jpg);
+    background-size: 70vh, cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main .main-intro h1{
+    font-size: 10.6rem;
+    line-height: 1.1;
+}
+
+main p{
+    font-size: 1.8rem;
+    line-height: 1.75;
+}
+
+main a{
+    margin-left: 300px;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    display: block;
+    background-color: var(--site-color-01);
+    width: fit-content;
+    padding: 10px 20px;
+    transition: 0.25s;
+    color: #1e1e1e;
+    border-radius: 5px;
+}
+
+main a:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+main .main-quotes p {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+    margin: 40px 0;
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+main .main-intro {
+    position: relative;
+    right: 25vh;
+}
+
+main .main-intro p {
+    margin-top: 45px;
+}
+
+
+main .main-quotes {
+    position: relative;
+    left: 20vh;
+}
+
+/* Projects Section */
+.projects {
+  padding: 4rem 2rem;
+  background: #222;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+  color: var(--site-color-01);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+ display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* text at bottom */
+  padding: 1.5rem;
+  height: 500px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;      /* fill the card */
+  background-position: 50% 15%; 
+  background-repeat: no-repeat;
+}
+
+.project-description{
+    border-radius: 15px;
+    font-size: large;
+    opacity: .9;
+    color: var(--site-color-01);
+    background-color: #1e1e1e;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project1 {
+    justify-self: auto;
+    background-image: url('../Images/afiche-blue-beetle.webp');
+}
+.project2 {
+    justify-self: auto;
+    background-image: url('../Images/afiche-black-panther.jpg');
+}
+.project3 {
+    justify-self: auto;
+    background-image: url('../Images/afiche-fantasy-island.webp');
+}
+
+.list-container{
+    display: flex;
+    gap: 40px;
+}
+
+.list-name{
+    margin-top: 100px;
+    width: 400px
+}
+.project-list {
+    width: 20px;
+    justify-items: center;
+    list-style-type: none;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+.project-item {
+    width: 600px;
+    height: 10vh;
+    align-content: center;
+    margin: 16px 16px;
+    font-size: 3.8rem;
+    color: #d0d0d0;
+    background-color: #2b2a2a;
+    border-radius: 20px;
+}
+
+/* Gallery SECTION */
+
+#gallery-title {
+    font-size: 4.2rem;
+    color: var(--site-color-01);
+    padding-top: 32px;
+    justify-self: center;
+}
+
+.index-gallery {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    background: #1e1e1e;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1.5rem;
+    align-items: stretch;
+}
+
+.index-gallery p {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+}
+
+/* Gallery cards */
+.gallery-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-card-right{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover animation */
+.gallery-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-card-right:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* About me section */
+
+.index-about {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #1e1e1e;
+}
+
+.index-about-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.index-about-img img {
+    width: 400px;
+    border-radius: 100px;
+}
+
+.index-about-text {
+    flex-basis: 455px;
+}
+
+.index-about-text p {
+    padding: 20px 0;
+}
+
+.index-about-text a {
+        font-size: 1.8rem;
+        display: block;
+        height: 1.5;
+        background-color: var(--site-color-01);
+        padding: 10px 20px;
+        width: fit-content;
+        transition: 0.25s;
+        color: #1e1e1e;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+.index-about-text a:hover {
+    color:#fff;
+    transform: scale(1.05);
+}
+
+.index-about-skills {
+    flex-basis: 355px;
+}
+
+.index-about-skills-bar {
+    width: 100% - 8px;
+    height: 20px;
+    border: 1px solid var(--site-color-01);
+}
+
+.index-about-skills-bar-fill {
+    width: 40%;
+    height: 100%;
+    background-color: var(--site-color-02);
+}
+
+.lighting {
+    width: 90%;
+}
+
+.homesolutions {
+    width: 40%;
+}
+
+.htmlcss {
+    width: 55%;
+}
+
+.py {
+    width: 20%;
+}
+
+/* ---- Mobile Version ---- */
+@media (max-width: 600px) {
+
+    main {
+        align-items: flex-end;
+    }
+    
+    main .main-intro {
+        padding-bottom: 8vh;
+        left: 0%;
+    }
+    main .main-intro h1{
+        position: absolute;
+        font-size: 5rem;
+        line-height: 1.1;
+        text-align: center;
+        top: -120%;
+        left: 25%;
+    }
+    
+    main p{
+        text-align: center;
+        padding: 0 20px;
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
+    
+    main a{
+        margin: 3 auto;
+    }
+    
+    main a:hover {
+        transform: scale(1.05);
+        color: #fff;
+    }
+    
+    main .main-quotes p {
+        border-left: 4px solid var(--site-color-01);
+        padding-left: 20px;
+        margin: 40px 0;
+        font-style: italic;
+        font-size: 2.2rem;
+    }
+    
+    main .main-intro {
+        position: relative;
+        right: 25vh;
+    }
+    
+    main .main-intro p {
+        margin-top: 45px;
+    }
+    
+    
+    main .main-quotes {
+        position: relative;
+        left: 20vh;
+    }
+    
+    main .main-quotes p {
+        display: none;
+    }
+
+    /* GALLERY SECTION */
+
+    .index-gallery{
+        width: 100%;
+        padding: 40px 0 20px;
+        row-gap: 10px;
+    }
+
+    .index-gallery p {
+        padding-bottom: 20px;
+    }
+
+    .index-gallery-box {
+        border-radius: 0%;
+        width: 100%;
+        height: 160px;
+        opacity: 0.7;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+    
+    /* About me section */
+
+.index-about {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #1e1e1e;
+}
+
+.index-about-flex {
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.index-about-img {
+    width: 60%;
+}
+.index-about-img img {
+    width: 100%;
+    border-radius: 2.6rem;
+}
+
+.index-about-text {
+    flex-basis: 100%;
+}
+
+.index-about-text h2 {
+    text-align: center;
+}
+
+.index-about-text p {
+    text-align: center;
+}
+
+.index-about-text a {
+        margin: 0 auto 10px;
+    }
+
+    .index-about-text a:hover {
+        color:#fff;
+        transform: scale(1.05);
+    }
+
+    .index-about-skills {
+        flex-basis: 355px;
+    }
+
+    .index-about-skills-bar {
+        width: 100% - 8px;
+        height: 20px;
+        border: 1px solid var(--site-color-01);
+    }
+
+    .index-about-skills-bar-fill {
+        width: 40%;
+        height: 100%;
+        background-color: var(--site-color-02);
+    }
+
+    .lighting {
+        width: 95%;
+    }
+
+    .homesolutions {
+        width: 40%;
+    }
+
+    .htmlcss {
+        width: 55%;
+    }
+
+    .py {
+        width: 20%;
+    }
+    }
